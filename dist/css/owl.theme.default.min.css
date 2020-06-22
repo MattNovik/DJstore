@@ -9,17 +9,23 @@
 	-webkit-tap-highlight-color:transparent
 }
 .owl-theme .owl-nav{
-	display: none;
 }
-.owl-theme .owl-nav [class*=owl-]{
+.owl-theme .owl-nav .owl-prev,
+.owl-theme .owl-nav .owl-next,{
 	color:#FFF;
 	font-size:14px;
-	margin:5px;
-	padding:4px 7px;
-	background:#D6D6D6;
+	margin:20px;
+	padding:20px 7px;
+	background:#fff;
 	display:inline-block;
 	cursor:pointer;
-	border-radius:3px
+	border-radius:50%;
+	width:20px;
+	height:20px;
+}
+.owl-theme .owl-nav .owl-prev span,
+.owl-theme .owl-nav .owl-next span {
+	display: none;
 }
 .owl-theme .owl-nav [class*=owl-]:hover{
 	background:#869791;

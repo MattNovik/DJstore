@@ -70,11 +70,61 @@
 .owl-carousel .owl-nav button.owl-next,
 .owl-carousel .owl-nav button.owl-prev,
 .owl-carousel button.owl-dot{
-	background:0 0;
 	color:inherit;
 	border:none;
-	padding:0!important;
 	font:inherit
+}
+.owl-carousel .owl-nav {
+	display: flex;
+
+}
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
+	width:40px;
+	height:40px;
+	border-radius: 50%;
+	background: #397DFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+.owl-carousel .owl-nav button.owl-next span,
+.owl-carousel .owl-nav button.owl-prev span {
+	display: none;
+}
+.owl-carousel .owl-nav button.owl-prev {
+	margin:0 20px;
+}
+.owl-carousel .owl-nav button.owl-next:focus,
+.owl-carousel .owl-nav button.owl-prev:focus {
+	outline:none;
+}
+.owl-carousel .owl-nav button.owl-prev::after {
+	position: absolute;
+	top:5px;
+	left:11px;
+	content: '⌵';
+  	display: block;
+  	color:#fff;
+  	text-align: center;
+  	font-size: 180%;
+}
+.owl-carousel .owl-nav button.owl-next::after {
+	position: absolute;
+	top:5px;
+	right:11px;
+	content: '⌵';
+  	display: block;
+  	color:#fff;
+  	text-align: center;
+  	font-size: 180%;
+}
+.owl-carousel .owl-nav button.owl-next::after {
+	transform: rotate(-90deg);
+}
+.owl-carousel .owl-nav button.owl-prev::after {
+	transform: rotate(90deg);
 }
 .owl-carousel.owl-loading{
 	opacity:0;
